@@ -1,0 +1,37 @@
+<div class="p-3  bg-primary text-white text-center">
+    <h1> "Tout ce que je sais, c'est que je ne sais rien, tandis que les autres croient savoir ce qu'ils ne savent pas." </h1>
+    <p><cite>Socrate</cite> </p>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="">Accueil</a>
+        </li>
+         <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLink="/maCitation" > Citations</a> 
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" routerLink="/maCitation/name/Socrate">{{ auteur1 }}</a></li>
+                  <li><a class="dropdown-item" routerLink="/maCitation/name/Friedrich Nietzsche">{{ auteur2 }}</a></li>
+                 
+                  <li><a class="dropdown-item" routerLink="/maCitation/name/Karl Marx">{{ auteur3 }}</a></li>
+                </ul> 
+            </li>
+          <li class="nav-item">
+          <a class="nav-link" routerLink="/create">Ajouter citations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ 

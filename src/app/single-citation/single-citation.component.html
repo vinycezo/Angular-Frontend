@@ -1,0 +1,13 @@
+<div class="form-card" *ngIf="citation$ | async as citation">
+    <div class="container mt-3">
+        
+        <div class="card">
+            <a routerLink="/maCitation">BACK</a>
+          <div class="card-header">{{citation.auteur}}</div>
+          <div class="card-body bg-dark text-white">{{citation.libelle}}</div> 
+          <div class="card-footer"><cite>{{citation.oeuvre}}</cite></div>
+        </div>
+        <span><Button class="btn btn-success" (click)="onlike(citation._id)">{{buttontxt}}</Button> &nbsp; {{citation.like}}</span>
+      </div>
+    </div>
+    
